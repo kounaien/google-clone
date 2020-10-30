@@ -20,4 +20,18 @@
 
   - history
 
-- <StateProvider initialState={initialState} reducer={reducer} />
+- <StateProvider initialState={initialState}  reducer={reducer} /> //説明 1.40 分 index.js
+  childern is refering to <App /> in the index.js
+
+initial state is what that data layer looks like when the app is loaded
+
+the reducer is something which is clever and it listens to changes for hte that will be needed from there that
+
+export const use StateValue = () => useContext(StateContext)
+is hook which allows us to pull informmation from the data layer
+
+redux plan ? the react context api ?
+
+- reducer and initialState live in a file called reducer.js
+
+- StateProvider 全体
