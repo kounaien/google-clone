@@ -25,7 +25,7 @@
 
 initial state is what that data layer looks like when the app is loaded
 
-the reducer is something which is clever and it listens to changes for hte that will be needed from there that
+the reducer is something which is clever and it listens to changes for that will be needed from there that
 
 export const use StateValue = () => useContext(StateContext)
 is hook which allows us to pull informmation from the data layer
@@ -35,3 +35,25 @@ redux plan ? the react context api ?
 - reducer and initialState live in a file called reducer.js
 
 - StateProvider 全体
+
+- reducer.js
+  export const initialState = {
+  term: null,
+  }
+  what is Elon musk
+
+  whenever we want to change the data layer
+  we need todispatch an action
+  export const actionTypes = {
+  SET_SERCH_TERM: "SET_SEARCH_TERM"
+  }
+
+  what is switch in reducer
+
+  the state is state of data layer
+
+action in reducer is whatever we're dispatching into the data layer so into the context
+
+...state is called spread operator
+
+1.47 分
