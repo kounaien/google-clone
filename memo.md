@@ -57,3 +57,5 @@ action in reducer is whatever we're dispatching into the data layer so into the 
 ...state is called spread operator
 
 1.47 分
+
+const [{ term }, dispatch] = useStateValue(); in SearchPage.js
