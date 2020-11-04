@@ -5,6 +5,8 @@ import { useStateValue } from "./StateProvider";
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
 
+  // https://developers.google.com/custom-search/v1/useng_rest
+
   return (
     <div className="searchPage">
       <div className="searchPage__header">
