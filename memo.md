@@ -59,3 +59,11 @@ action in reducer is whatever we're dispatching into the data layer so into the 
 1.47 分
 
 const [{ term }, dispatch] = useStateValue(); in SearchPage.js
+
+- useGoogleSearch.js
+  custom json api
+  programmerble search
+
+this hook is going to have its own piece of state called data
+// const [data, setData] = useState(null);
+and this hook whenever use it has useEffect right so whenever we use this hook it's gonna fire off a use effect
