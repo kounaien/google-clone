@@ -68,4 +68,6 @@ this hook is going to have its own piece of state called data
 // const [data, setData] = useState(null);
 and this hook whenever use it has useEffect right so whenever we use this hook it's gonna fire off a use effect
 
-2.21
+2.33
+
+response が全部 term になっている
