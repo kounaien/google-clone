@@ -12,6 +12,8 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background-image: -weblit-linear-gradient(top, #f8f8f8, #f1f1f1);
   Button varient='outlined'
+  align-items: flex-start;
+  width: unset;
 
 - hook
   const [input, setInput] = useState("");
