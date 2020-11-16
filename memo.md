@@ -73,3 +73,5 @@ and this hook whenever use it has useEffect right so whenever we use this hook i
 2.33
 
 response が全部 term になっている
+
+2.47
