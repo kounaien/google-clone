@@ -27,3 +27,28 @@
   align-items: center;
   color: grey;
 }
+
+.searchPage__optionsRight a,
+.searchPage__options a {
+  text-decoration: none;
+  color: gray;
+}
+
+.searchPage__optionsRight,
+.searchPage__optionsLeft {
+  display: flex;
+}
+
+.searchPage__optionsRight {
+  margin-left: 80px;
+}
+
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.searchPage__option a {
+  margin-left: 5px;
+}

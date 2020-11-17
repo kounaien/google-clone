@@ -75,3 +75,12 @@ and this hook whenever use it has useEffect right so whenever we use this hook i
 response が全部 term になっている
 
 2.47
+
+- searchPage result
+  {true && (
+  <div className="searchPage__results">
+  <p className="searchPage__resultCount">
+  About 30000 results (0.3 seconds) for Tesla
+  </p>
+  </div>
+  )}
