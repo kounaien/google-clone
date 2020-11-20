@@ -66,8 +66,19 @@ function SearchPage() {
       {true && (
         <div className="searchPage__results">
           <p className="searchPage__resultCount">
-            About 30000 results (0.3 seconds) for Tesla
+            About {data?.searchInformation.formattedTotalResults} results (
+            {data?.searchInformation.formattedSearchTime} seconds) for {term}
           </p>
+
+          {data?.items.map((item) => (
+            <div className="searchPage__result">
+              <a href={item.link}>{item.displayLink}</a>
+              <a className="serchPage__resultTitle" href={item.link}>
+                <h2>{item.title}</h2>
+              </a>
+              <p className="serchPage__resultSnippet">{item.snippet}</p>
+            </div>
+          ))}
         </div>
       )}
     </div>

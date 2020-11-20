@@ -78,9 +78,25 @@ response が全部 term になっている
 
 - searchPage result
   {true && (
-  <div className="searchPage__results">
-  <p className="searchPage__resultCount">
-  About 30000 results (0.3 seconds) for Tesla
-  </p>
+    <div className="searchPage__results">
+    <p className="searchPage__resultCount">
+    About 30000 results (0.3 seconds) for Tesla
+    </p>
+    </div>
+    )}
+
+  About {data?.searchInformation.formattedTotalResults} results
+
+  {data?.items.map((item) => (
+  <div className="searchPage__result">
+  <a href={item.link}>{item.displayLink}</a>
+  <a className="serchPage__resultTitle" href={item.link}>
+  <h2>{item.title}</h2>
+  </a>
+  <p className="serchPage__resultSnippet">{item.snippet}</p>
   </div>
-  )}
+  ))}
+
+  2.57 each results items map inroduction
+
+  3.00 snippet
