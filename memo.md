@@ -100,3 +100,22 @@ response が全部 term になっている
   2.57 each results items map inroduction
 
   3.00 snippet
+
+<a href={item.link}>
+                {item.pagemap?.cse_image?.length > 0 &&
+                  item.pagemap?.cse_image[0]?.src && (
+                    <img
+                      className="serchPage__resultImage"
+                      src={
+                        item.pagemap?.cse_image?.length > 0 &&
+                        item.pagemap?.cse_image[0]?.src
+                      }
+                      alt=""
+                    />
+                  )}
+                {item.displayLink}
+</a>
+
+- mock api
+
+  3.09
